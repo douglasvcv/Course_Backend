@@ -1,9 +1,9 @@
-import {app} from "./server/Server.ts"
+import { app } from "./server/Server.ts"
 
-app.get('/',(req, res)=>{
+app.get('/', (req, res) => {
     res.send('Eu te mamo celeste')
 })
 
-app.listen(3333, ()=>{
+app.listen(3333, () => {
     console.log("Server running")
 })
