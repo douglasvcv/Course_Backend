@@ -1,10 +1,10 @@
-import express from 'express';
+import express, { json } from 'express';
+import { route } from '../routes/route';
 
 const app = express()
 
 
-app.get('/teste', (req, res)=>{
-    res.send('Olá dev')
-})
+app.use(json())
+app.use(route)
 
 export {app}
